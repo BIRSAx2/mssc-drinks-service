@@ -29,7 +29,7 @@ public class DrinkController {
   }
 
   @PostMapping
-  public ResponseEntity<DrinkDto> saveDrink(@RequestBody DrinkDto drinkDto) {
+  public ResponseEntity<DrinkDto> createDrink(@RequestBody DrinkDto drinkDto) {
     // todo: impl
     return new ResponseEntity<>(DrinkDto.builder().build(), HttpStatus.CREATED);
   }
